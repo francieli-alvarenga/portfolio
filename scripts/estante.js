@@ -42,3 +42,34 @@ chk.addEventListener("change", () => {
     localStorage.setItem('clean',1)
   }
 });
+
+// Envio de formulario 
+
+const formE1 = document.getElementById('form-api');
+
+formE1.addEventListener('submit', evento => {
+  evento.preventDefault();
+  
+  const formDados = new FormData(formE1);
+  const data = Object.fromEntries(formDados.entries());
+
+  fetch('https://api.staticforms.xyz/submit', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Erro ao enviar o formulário');
+    }
+  }).then(data => {
+    console.log('Formulário enviado com sucesso:', data);
+    window.location.href = '../pages/obrigado.html';
+  }).catch(error => {
+    console.error('Erro:', error);
+  });
+});

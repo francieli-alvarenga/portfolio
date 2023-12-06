@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- fim google icons -->
    <link rel="stylesheet" href="../styles/estante.css">
+   <link rel="stylesheet" href="../styles/obrigado.css">
     <title>Estante</title>
   </head>
     <body class="pagina-toda">
@@ -257,39 +258,34 @@
 
         <section class="biblioteca-palestra">
           <div class="lista-de-palestras"> 
-              <h2 class="sub-titulo"><span>Palestras </span> assistidas.</h2>
+            <h2 class="sub-titulo"><span>Palestras </span> assistidas.</h2>
           </div>
           <div class="biblioteca-container" id="cursos-container">
-
-            <a href="https://www.youtube.com/watch?v=4nepEd9BxPs" class="Palestras">
-            </a>
-
-             <iframe src="https://www.youtube.com/embed/A4aOnjrXyYw?si=GQwuMHqm8oYo7w9Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             <iframe src="https://www.youtube.com/embed/OL2ebjNZYOk?si=bh-gP2b0xwdCkRJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-             <iframe src="https://www.youtube.com/embed/KSkku8sU7KY?si=Kd38ZjvlRTgdhv-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             <iframe src="https://www.youtube.com/embed/MQtJX8ka5mQ?si=FOMFMQ7sxOpXXmfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/A4aOnjrXyYw?si=GQwuMHqm8oYo7w9Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OL2ebjNZYOk?si=bh-gP2b0xwdCkRJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe src="https://www.youtube.com/embed/KSkku8sU7KY?si=Kd38ZjvlRTgdhv-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/MQtJX8ka5mQ?si=FOMFMQ7sxOpXXmfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-      </section>
-      <section class="formulario">
-        <div class="interface">
-          <div class="titulo">
-            <h2>Fala<span>Comigo.</span></h2>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-              <input type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
-              <!-- <input type="hidden" name="redirectTo" value="./obrigado.html"> *****so funciona com o site no ar****** -->
+        </section>
+        
+      <form id="form-api" method="post">
+        <input id="form-api" type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
 
-              <label for="nome">Nome:</label>
-              <input type="text" name="name" placeholder="Seu nome Completo:" required />
-              <label for="email">E-mail:</label>
-              <input type="email" name="email" placeholder="Seu e-mail:" required />
-              <label for="celular">Seu celular:</label>
-              <input type="text" name="celular" placeholder="(00)00000-0000" required />
-              <label for="mensagem">Sua mensagem:</label>
-              <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
-              <div class="btn-enviar">
-                <input type="submit" value="ENVIAR" />
-              </div>
-            </form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="name" placeholder="Seu nome Completo:" required />
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Seu e-mail:" required />
+        <label for="celular">Seu celular:</label>
+        <input type="text" name="celular" placeholder="(00)00000-0000" required />
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
+        <div class="btn-enviar">
+          <input type="submit" value="ENVIAR" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
           </div>
         </div>
       </section>
