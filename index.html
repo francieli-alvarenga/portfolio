@@ -15,7 +15,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- fim google icons -->
     <link rel="stylesheet" href="../portfolio/styles/styles.css" />
-    <link rel="stylesheet" href="./pages/obrigado.html">
+    <link rel="stylesheet" href="../portfolio/pages/obrigado.html">
      <title>Meu Portfolio</title>
   </head>
   <body class="pagina-toda">
@@ -64,6 +64,7 @@
             <span class="material-symbols-outlined">
               close
               </span>
+          </button>
           <nav>
             <ul>
               <li><a href="./index.html">Minha Historia</a></li>
@@ -126,34 +127,33 @@
       <section class="formulario">
         <div class="interface">
           <div class="titulo">
-            <h2 class="title-form">Fala <span>Comigo.</span></h2>
-            <section class="formulario">
-              <div class="interface">
-                <div class="titulo">
-                  <h2>Fala<span>Comigo.</span></h2>
-                  <form id="form-api" action="https://formspree.io/f/mpzggbdb" method="post">
-      
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="name" placeholder="Seu nome Completo:" required />
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" placeholder="Seu e-mail:" required />
-                    <label for="celular">Seu celular:</label>
-                    <input type="text" name="celular" placeholder="(00)00000-0000" required />
-                    <label for="mensagem">Sua mensagem:</label>
-                    <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
-                    <div class="btn-enviar">
-                      <input type="submit" value="ENVIAR" />
-                    </div>
-                  </form>
-                </div>
+            <h2>Fala<span>Comigo.</span></h2>
+            
+            <form  method="post">
+              <input id="form-api" type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
+
+              <label for="nome">Nome:</label>
+              <input type="text" name="name" placeholder="Seu nome Completo:" required />
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" placeholder="Seu e-mail:" required />
+              <label for="celular">Seu celular:</label>
+              <input type="text" name="celular" placeholder="(00)00000-0000" required />
+              <label for="mensagem">Sua mensagem:</label>
+              <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
+              <div class="btn-enviar">
+                <input type="submit" value="ENVIAR" />
               </div>
-            </section>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
       <footer class="rodape">
         <div class="interface">
           <div class="line-footer borda">
             <div class="flex">
             <div class="logo-footer">
-              <img src="./assets/images/portifolio-pequeno.png" alt="logo" />
+              <img src="../assets/images/portifolio-pequeno.png" alt="logo" />
             </div>
           </div>
           </div>
@@ -164,9 +164,8 @@
                 forward_to_inbox
               </span>
        <a href="mailto:francielereis0@gmail.com">francielereis0@gmail.com</a>
-      <script src="../portfolio/scripts/main.js" defer ></script>
     </p>
   </div>
-    </main>
+  <script src="../scripts/social.js" defer ></script>
     </body>
 </html>

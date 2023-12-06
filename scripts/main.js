@@ -53,11 +53,12 @@ formE1.addEventListener('submit', evento => {
   const formDados = new FormData(formE1);
   const data = Object.fromEntries(formDados.entries());
 
-  fetch('https://formspree.io/f/mpzggbdb', {
+  fetch('https://api.staticforms.xyz/submit', {
     method: 'POST',
-    body: formDados,
+    body: JSON.stringify(data),
     headers: {
-      'Accept': 'application/json'
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
     }
   }).then(response => {
     if (response.ok) {
