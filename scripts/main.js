@@ -68,7 +68,7 @@ formE1.addEventListener('submit', evento => {
     }
   }).then(data => {
     console.log('Formulário enviado com sucesso:', data);
-    window.location.href = '../pages/obrigado.html';
+    window.location.href = './pages/obrigado.html';
   }).catch(error => {
     console.error('Erro:', error);
   });
