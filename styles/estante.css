@@ -1,0 +1,513 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(3, 2, 3);
+  height: 100vh;
+  transition: 0.2s linear;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body.clean {
+  background-color: #fff;
+}
+
+body.clean h1,
+body.clean p,
+body.clean h2,
+body.clean li a,
+body.clean label,
+body.clean .email-footer {
+  color: #000;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label-botao {
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  height: 26px;
+  width: 50px;
+}
+
+.label-botao .ball {
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translate(0px);
+  transition: trasnform 0.2s linear;
+}
+
+.checkbox:checked + .label-botao .ball {
+  transform: translateX(24px);
+}
+
+.sol-e-lua .material-symbols-outlined {
+  font-size: 15px;
+  color: #f39c12;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.botao-contato {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(196, 124, 189);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.botao-contato:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0 0 8px 0 rgb(196, 124, 189);
+  transform: scale(1.05);
+}
+
+span {
+  color: rgb(196, 124, 189);
+}
+
+/* Estilo do Header */
+
+header .interface {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 4%;
+}
+
+.interface .logo {
+  margin: 40px 0;
+  flex-direction: row;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header nav.menu-desktop a:hover {
+  color: rgb(196, 124, 189);
+  transform: scale(1.05);
+}
+
+header nav.menu-desktop ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+  padding: 0 40px;
+}
+
+/* estilo menu mobile */
+
+.btn-abrir-menu .material-symbols-outlined {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 60px;
+  color: rgb(196, 124, 189);
+}
+
+.btn-menu-mobile {
+  background-color: rgb(6, 5, 5);
+}
+
+.btn-abrir-menu {
+  display: none;
+  background-color: black;
+  border: 0;
+}
+
+.menu-mobile {
+  background-color: rgb(7, 1, 1);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 70%;
+  display: block;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.menu-mobile ul {
+  text-align: right;
+}
+
+.menu-mobile ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 4%;
+  display: block;
+}
+
+.menu-mobile ul li a:hover {
+  color: rgb(196, 124, 189);
+}
+
+.menu-mobile .btn-fechar {
+  color: rgb(196, 124, 189);
+  padding: 20px 8%;
+}
+
+.btn-fechar {
+  background-color: black;
+  color: rgb(196, 124, 189);
+  border: 0;
+  align-items: end;
+}
+
+.btn-fechar .material-symbols-outlined {
+  display: flex;
+  align-items: end;
+  font-size: 45px;
+}
+
+.overlay-menu {
+  background-color: rgba(0, 0, 0, 0.547);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 988;
+  display: none;
+}
+/* section biblioteca cursos  */
+
+.titulo {
+  color: #fff;
+  font-size: 65px;
+  padding: 40px 8%;
+}
+
+.sub-titulo {
+  margin: 10px;
+  padding: 40px 8%;
+  color: #fff;
+  font-size: 35px;
+}
+
+.biblioteca-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+  transition: 0.5;
+}
+
+.meus-cursos {
+  margin: 20px;
+  width: 330px;
+  height: 330px;
+}
+
+.meus-cursos img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(196, 124, 189);
+  box-shadow: 5px 5px 5px rgba(209, 202, 202, 0.4);
+}
+
+.meus-cursos:hover {
+  transform: scale(1.1);
+}
+/* biblioteca-artigos */
+.artigos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+  transition: 0.5;
+}
+
+.biblioteca-artigos {
+  width: 100%;
+  height: 100%;
+}
+.artigos {
+  margin: 10px 20px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 330px;
+}
+
+.artigos:hover {
+  transform: scale(1.1);
+}
+
+.artigos p {
+  color: #fff;
+}
+
+.artigos p a {
+  color: rgb(196, 124, 189);
+}
+
+.artigo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid rgb(196, 124, 189);
+  box-shadow: 5px 5px 5px rgba(209, 202, 202, 0.4);
+}
+
+/* biblioteca-livros */
+
+.livros-lidos img {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(209, 202, 202, 0.4);
+  border: 5px solid rgb(196, 124, 189);
+  transition: all 0.3s ease-in-out;
+}
+
+.livros-lidos img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px rgba(209, 202, 202, 0.4);
+}
+
+.meus-livros {
+  padding: 80px;
+}
+/* estilo do formulario */
+
+.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: rgba(69, 66, 66, 0.269);
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 50%;
+  background-color: rgb(196, 124, 189);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.titulo h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 span {
+  color: rgb(196, 124, 189);
+}
+
+label {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* estilo do footer */
+
+footer {
+  padding: 40px 4%;
+}
+
+footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-bottom: 2px solid rgb(196, 124, 189);
+}
+
+footer .line-footer p a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.fim {
+  color: rgb(196, 124, 189);
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.abrir-fechar {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1220px) {
+  /* classes gerais */
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+  /* cabecalho */
+
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+
+  .btn-abrir-menu {
+    display: flex;
+  }
+  /* topo do site */
+
+  section .topo-do-site {
+    padding: 20px 8%;
+  }
+
+  .topo-do-site h1 {
+    font-size: 30px;
+  }
+
+  .topo-do-site p {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  section.topo-do-site .flex {
+    gap: 90px;
+  }
+
+  /* section Redes sociais */
+
+  section.redes-sociais {
+    padding: 40px 4%;
+  }
+
+  section.redes-sociais .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .redes-sociais .redes-sociais-box {
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .redes-sociais h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .img-sobre img {
+    width: 90%;
+  }
+  .redes-sociais p {
+    text-align: center;
+  }
+
+  /* formulario */
+
+  .formulario {
+    padding: 80px 8%;
+  }
+  h2 {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  footer p img {
+    width: 30px;
+  }
+  footer .line-footer p a {
+    color: #fff;
+    font-size: 20px;
+  }
+}
