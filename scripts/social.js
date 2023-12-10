@@ -11,9 +11,7 @@ menu.addEventListener("click", () => {
   menu.classList.remove("abrir-menu");
 });
 
-// overlay.addEventListener("click", () => {
-//   menu.classList.remove("abrir-menu");
-// });
+
 
 // tema claro/escuro
 

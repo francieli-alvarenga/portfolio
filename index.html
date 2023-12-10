@@ -15,7 +15,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- fim google icons -->
     <link rel="stylesheet" href="../portfolio/styles/styles.css" />
-    <link rel="stylesheet" href="./pages/obrigado.html">
      <title>Meu Portfolio</title>
   </head>
   <body class="pagina-toda">
@@ -52,7 +51,7 @@
           </ul>
         </nav>
         <div class="btn-contato">
-          <a href="seu-caminho-aqui" class="botao-contato">Contato</a>
+          <a href="#contato" class="botao-contato">Contato</a>
         </div>
         <button class="btn-abrir-menu" id="botao-menu">
           <span class="material-symbols-outlined">
@@ -70,7 +69,7 @@
               <li><a href="./index.html">Minha Historia</a></li>
               <li><a href="./pages/social.html">Redes Sociais</a></li>
               <li><a href="./pages/estante.html">Estante</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -89,7 +88,7 @@
                 com o<span>Front-End,</span>mas também atuo com o<span>Back-End.</span>
               </p>
               <div class="btn-contato">
-                <a href="seu-caminho-aqui" class="botao-contato">Entre em Contato</a>
+                <a href="#contato" class="botao-contato">Entre em Contato</a>
               </div>
             </div>
             <div class="img-topo-site">
@@ -118,13 +117,13 @@
                 fullstack na escola de programação Ada.
               </p>
               <div class="btn-social">
-                <a href="seu-caminho-aqui" class="botao-contato">Minhas Redes Sociais</a>
+                <a href="#contato" class="botao-contato">Minhas Redes Sociais</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="formulario">
+      <section class="formulario" id="contato">
         <div class="interface">
           <div class="titulo">
             <h2 class="text-pink">Fala <span>Comigo.</span></h2>
@@ -133,13 +132,13 @@
               <input type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
 
               <label for="nome">Nome:</label>
-              <input type="text" name="name" placeholder="Seu nome Completo:" required />
+              <input type="text" id="name" placeholder="Seu nome Completo:" required />
               <label for="email">E-mail:</label>
-              <input type="email" name="email" placeholder="Seu e-mail:" required />
+              <input type="email" id="email" name="email" placeholder="Seu e-mail:" required />
               <label for="celular">Seu celular:</label>
-              <input type="text" name="celular" placeholder="(00)00000-0000" required />
+              <input type="text" id="celular" name="celular" placeholder="(00)00000-0000" required />
               <label for="mensagem">Sua mensagem:</label>
-              <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
+              <textarea name="message"id="mensagem"placeholder="Digite aqui sua mensagem:"required></textarea>
               <div class="btn-enviar">
                 <input type="submit" value="ENVIAR" />
               </div>
