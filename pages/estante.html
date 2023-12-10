@@ -64,7 +64,7 @@
               </ul>
             </nav>
             <div class="btn-contato">
-              <a href="#" class="botao-contato">Contato</a>
+              <a href="#contato" class="botao-contato">Contato</a>
            </div>
             <button class="btn-abrir-menu" id="botao-menu">
               <span class="material-symbols-outlined abrir-fechar">
@@ -82,7 +82,7 @@
                 <li><a href="../index.html">Minha Historia</a></li>
                 <li><a href="../pages/social.html">Redes Sociais</a></li>
                 <li><a href="../pages/estante.html">Estante</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
               </ul>
             </nav>
               </div>
@@ -245,13 +245,11 @@
             </div>
             <div class="livros-lidos" id="livros-lidos">
 
-              <a href="#" class="meus-livros">
+    
                 <img src="../assets/imagens-estante/algoritmos.jpg" alt="Livros">
-              </a>
-
-              <a href="#" class="meus-livros">
+             
                 <img  src="../assets/imagens-estante/scrum-livros.jpeg" alt="Livros">
-              </a>
+              
 
             </div>
         </section>
@@ -267,18 +265,19 @@
             <iframe src="https://www.youtube.com/embed/MQtJX8ka5mQ?si=FOMFMQ7sxOpXXmfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
-        
+
+      <section class="formulario" id="contato">
       <form id="form-api" method="post">
         <input id="form-api" type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
 
         <label for="nome">Nome:</label>
-        <input type="text" name="name" placeholder="Seu nome Completo:" required />
+        <input type="text" id="nome" name="name" placeholder="Seu nome Completo:" required />
         <label for="email">E-mail:</label>
-        <input type="email" name="email" placeholder="Seu e-mail:" required />
+        <input type="email" id="email" name="email" placeholder="Seu e-mail:" required />
         <label for="celular">Seu celular:</label>
-        <input type="text" name="celular" placeholder="(00)00000-0000" required />
+        <input type="text" id="celular" name="celular" placeholder="(00)00000-0000" required />
         <label for="mensagem">Sua mensagem:</label>
-        <textarea name="message"id=""placeholder="Digite aqui sua mensagem:"required></textarea>
+        <textarea name="message"id="mensagem"placeholder="Digite aqui sua mensagem:"required></textarea>
         <div class="btn-enviar">
           <input type="submit" value="ENVIAR" />
         </div>
