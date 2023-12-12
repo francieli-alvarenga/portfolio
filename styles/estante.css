@@ -249,7 +249,7 @@ header nav ul li {
   height: 330px;
 }
 
-.meus-cursos img {
+img .meus-cursos {
   width: 100%;
   height: 100%;
   border: 5px solid rgb(196, 124, 189);
@@ -291,7 +291,7 @@ header nav ul li {
   color: #fff;
 }
 
-.artigos p a img {
+.artigos p a {
   color: rgb(196, 124, 189);
 }
 
