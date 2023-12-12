@@ -68,7 +68,6 @@ body.clean .email-footer {
   color: #f39c12;
 }
 
-
 .flex {
   display: flex;
 }
@@ -292,7 +291,7 @@ header nav ul li {
   color: #fff;
 }
 
-.artigos p a {
+.artigos p a img {
   color: rgb(196, 124, 189);
 }
 
