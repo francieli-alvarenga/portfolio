@@ -1,0 +1,104 @@
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.topo-do-site span {
+  color: rgb(196, 124, 189);
+}
+
+.topo-do-site p {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* section Redes Sociais  */
+
+section.redes-sociais {
+  padding: 40px 4%;
+}
+
+.redes-sociais .redes-sociais-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  transition: 0.2s;
+  text-align: center;
+  max-width: 350px;
+  flex: 1;
+}
+
+.redes-sociais .redes-sociais-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff8c;
+}
+
+.redes-sociais .redes-sociais-box h3 {
+  font-size: 23px;
+  color: rgb(196, 124, 189);
+}
+
+.redes-sociais .redes-sociais-box a {
+  text-decoration: none;
+}
+
+.redes-sociais h2 {
+  font-size: 45px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1220px) {
+  /* section Redes sociais */
+
+  section.redes-sociais {
+    padding: 40px 4%;
+  }
+
+  section.redes-sociais .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .redes-sociais .redes-sociais-box {
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .redes-sociais h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .img-sobre img {
+    width: 90%;
+  }
+  .redes-sociais p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- fim do google fontes -->
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- fim google icons -->
+    <link rel="stylesheet" href="../styles/estrutura.css">
+    <link rel="stylesheet" href="../styles/social.css" />
+    <title>Redes Sociais</title>
+</head>
+
+<body class="pagina-toda">
+    <header class="cabecalho">
+        <div class="interface">
+            <div class="logo">
+                <a href="../minha-historia.html">
+                    <img src="../assets/images/portifolio-pequeno.png" alt="logo" />
+                </a>
+            </div>
+
+            <div class="temas">
+                <input type="checkbox" class="checkbox" id="themeCheckbox" />
+                <label class="label-botao" for="themeCheckbox">
+                    <i class="sol-e-lua">
+                        <span class="material-symbols-outlined sol-e-lua">
+                            sunny
+                        </span>
+                    </i>
+                    <i class="sol-e-lua">
+                        <span class="material-symbols-outlined sol-e-lua">
+                            dark_mode
+                        </span>
+                    </i>
+                    <div class="ball">
+
+                    </div>
+                </label>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="../minha-historia.html">Minha Historia</a>
+                    </li>
+                    <li>
+                        <a href="../pages/social.html">Redes Sociais</a>
+                    </li>
+                    <li>
+                        <a href="../pages/estante.html">Estante</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#contato" class="botao-contato">Contato</a>
+            </div>
+            <button class="btn-abrir-menu" id="botao-menu">
+                <span class="material-symbols-outlined">
+                    dehaze
+                </span>
+            </button>
+        </div>
+    </header>
+<div class="menu-mobile" id="menu-mobile">
+    <button class="btn-fechar" id="botao-fechar">
+        <span class="material-symbols-outlined">
+            close
+        </span>
+        <nav>
+            <ul>
+                <li><a href="../minha-historia.html">Minha Historia</a></li>
+                <li><a href="../pages/social.html">Redes Sociais</a></li>
+                <li><a href="../pages/estante.html">Estante</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+</div>
+<div class="overlay-menu">
+
+</div>
+</header>
+<main>
+    <section class="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="txt-topo-site">
+                    <h1>Quer saber mais<span> sobre mim?</span></h1>
+                    <p>
+                        Me siga nas <span>redes sociais </span> e fique por dentro de
+                        tudo que eu faço. <span> Meu dia a dia</span>,
+                        <span>meus projetos</span> e muito mais. vai ser
+                        <span> um prazer </span>ter você por lá.
+                    </p>
+                    <div class="btn-contato">
+                        <a href="#contato" class="botao-contato">Entre Em Contato</a>
+
+                    </div>
+                </div>
+                <div class="img-topo-site">
+                    <img src="../assets/images/minha-foto-rede-sociais.jpeg" alt="minha-foto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="redes-sociais">
+        <div class="interface">
+            <h2 class="titulo">Minhas <span>Redes Sociais.</span></h2>
+            <div class="flex">
+                <div class="redes-sociais-box">
+                    <a href="https://www.linkedin.com/in/francieli-alvarenga/">
+                        <img src="../assets/images/social/linkedin.png" alt="logo-linkedin" />
+                        <h3>Linkedin</h3>
+                    </a>
+                    <p>Meu Linkedin, onde compartilho projetos e meu dia a dia.</p>
+                </div>
+                <div class="redes-sociais-box">
+                    <a href="https://github.com/francieli-alvarenga">
+                        <img src="../assets/images/social/github.png" alt="logo-github" />
+                        <h3>GitHub</h3>
+                    </a>
+                    <p>Meu GitHub, onde eu compartilho meus projetos.</p>
+                </div>
+                <div class="redes-sociais-box">
+                    <a href="https://www.youtube.com/@franalvarenga2901">
+                        <img src="../assets/images/social/youtube.png" alt="logo-youtube" />
+                        <h3>YouTube</h3>
+                    </a>
+                    <p>Meu canal, onde compartilho projetos e meu dia a dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario" id="contato">
+        <div class="interface">
+            <div class="titulo">
+                <h2 class="text-pink">Fala <span>Comigo.</span></h2>
+
+                <form id="form-api" method="post">
+                    <input type="hidden" name="accessKey" value="bd52b740-b927-4466-a1a6-db780ae5eb90">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="name" placeholder="Seu nome Completo:" required />
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="Seu e-mail:" required />
+                    <label for="celular">Seu celular:</label>
+                    <input type="text" name="celular" placeholder="(00)00000-0000" required />
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="message" id="" placeholder="Digite aqui sua mensagem:" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="rodape">
+    <div class="interface">
+        <div class="line-footer borda">
+            <div class="flex">
+                <div class="logo-footer">
+                    <img src="../assets/images/portifolio-pequeno.png" alt="logo" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line-footer ">
+        <p class="fim">
+            <span class="material-symbols-outlined">
+                forward_to_inbox
+            </span>
+            <a href="mailto:francielereis0@gmail.com">francielereis0@gmail.com</a>
+        </p>
+    </div>
+    <script src="../scripts/main.js" defer></script>
+    </body>
+
+    </html>

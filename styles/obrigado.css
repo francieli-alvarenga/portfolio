@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-size: 45px;
+    color: rgb(196, 124, 189);
+    margin: 30px;
+  }
+  
+  .paragrafo {
+    color: rgb(196, 124, 189);
+    margin: 50px;
+  }
+  
+  .btn {
+    padding: 15px 55px;
+    background-color: rgb(196, 124, 189);
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.5s;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    border-radius: 16px;
+    padding: 20px 60px;
+  }
+  

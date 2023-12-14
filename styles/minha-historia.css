@@ -1,0 +1,63 @@
+section.topo-do-site .flex {
+  justify-content: center;
+  align-items: center;
+  padding: 40px 4%;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+/* section sobre mim  */
+
+section.sobre {
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  padding: 80px 4%;
+}
+
+.sobre .flex {
+  align-items: center;
+  gap: 90px;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 45px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1220px) {
+  /* section sobre mim */
+
+  section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .img-sobre img {
+    width: 90%;
+  }
+  .sobre .txt-sobre p {
+    text-align: center;
+  }
+
+  .btn-social {
+    display: none;
+  }
+}
