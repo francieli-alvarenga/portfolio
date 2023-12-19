@@ -51,6 +51,7 @@
             <li><a href="../minha-historia.html">Minha Historia</a></li>
             <li><a href="../pages/social.html">Redes Sociais</a></li>
             <li><a href="../pages/estante.html">Estante</a></li>
+            <li><a href="../pages/repository.html">Repositório</a></li>
           </ul>
         </nav>
         <div class="btn-contato">
@@ -68,6 +69,7 @@
               <li><a href="../minha-historia.html">Minha Historia</a></li>
               <li><a href="./social.html">Redes Sociais</a></li>
               <li><a href="./estante.html">Estante</a></li>
+              <li><a href="../pages/repository.html">Repositório</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
@@ -80,10 +82,10 @@
         <div class="interface">
           <div class="flex">
             <div class="txt-topo-site">
-              <h1>Bem vindos ao meu <span>Repositorio</span></h1>
+              <h1 class="title">Bem vindos aos meus <span>Repositórios</span></h1>
               <p>
                 aqui você encontra alguns dos meus projetos e fica por dentro de
-                todos os <span>projetos novos</span>
+                todos os <span>projetos novos.</span>
               </p>
             </div>
             <div class="img-topo-site">
@@ -92,7 +94,25 @@
           </div>
         </div>
       </section>
-      <section class=""></section>
+      <section class="meu-repo">
+        <div class="repositorio">
+          <h2 class="sub-title">Meus <span>Repositórios</span> </h2>
+          <ul id="my-repo-list">
+          </ul>
+        </div>
+      </section>
+        <section id="repo-search">
+          <div class="pesquisa-repo">
+          <h2 class="sub-title">Pesquisar por <span>repositórios : </span> </h2>
+          <label for="username-input">Nome de usuário do GitHub:</label>
+          <input type="text" id="username-input" placeholder="Digite o nome do usuário do GitHub">
+          <button id="search-button">Pesquisar</button>
+          <ul id="repo-list">
+            
+          </ul>
+        </div>
+        </section>
+
       <section class="formulario" id="contato">
         <div class="interface">
           <div class="titulo">
@@ -163,5 +183,6 @@
         </div>
     </footer>
     </main>
+    <script src="../scripts/repository.js"></script>
   </body>
 </html>

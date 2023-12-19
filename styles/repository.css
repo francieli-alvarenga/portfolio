@@ -1,1 +1,124 @@
+/* Topo do site */
 
+.title {
+  font-size: 50px;
+  margin-right: 200px;
+  margin-top: 100px;
+}
+
+.img-topo-site {
+  margin-top: 100px;
+}
+
+.sub-title {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* Meus repositorios */
+
+.repositorio {
+  align-items: center;
+}
+
+#my-repo-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#my-repo-list li {
+  background-color: rgb(196, 124, 189);
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 15px;
+  width: calc(50% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#my-repo-list li:hover {
+  box-shadow: 0 5px 15px #ddd;
+}
+
+#my-repo-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#my-repo-list li a:hover {
+  color: #ddd;
+}
+
+/* Outros repositorios */
+
+.pesquisa-repo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.pesquisa-repo h2 {
+  margin-bottom: 20px;
+}
+
+.pesquisa-repo label {
+  margin-bottom: 10px;
+}
+
+.pesquisa-repo input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.pesquisa-repo button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(196, 124, 189);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pesquisa-repo button:hover {
+  background-color: rgb(210, 155, 204);
+}
+
+#repo-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#repo-list li {
+  background-color: rgb(196, 124, 189);
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 15px;
+  width: calc(50% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#repo-list li:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#repo-list a {
+  color: white;
+  text-decoration: none;
+}

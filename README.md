@@ -1,1 +1,3 @@
 # portfolio
+
+excluir .env
