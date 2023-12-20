@@ -10,6 +10,7 @@
   background-color: black;
   height: 100vh;
   transition: 0.2s linear;
+  color: #fff;
 }
 
 /* Tema claro e escuro */
@@ -133,7 +134,7 @@ header nav.menu-desktop ul {
 
 header nav ul li {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 0 40px;
 }
 
